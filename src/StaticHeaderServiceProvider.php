@@ -16,8 +16,8 @@ class StaticHeaderServiceProvider extends ServiceProvider
     public function boot()
     {
         $config = config('static-header', [
-          'fixedSidebar' => true,
-          'fixedNavbar'  => true,
+            'fixedSidebar' => true,
+            'fixedNavbar'  => true,
         ]);
 
         Nova::serving(function (ServingNova $event) use ($config) {
